@@ -8,5 +8,6 @@ public class Entrada2 {
         var num2 = Integer.parseInt(args[1]);
         var soma = num1 + num2;
         System.out.println("A soma é " + soma );
+        
     }
 }
