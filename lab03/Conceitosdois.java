@@ -8,6 +8,10 @@ public class Conceitos {
 
         switch (conceito) {
             case "A", "a"-> System.out.println("Equivale a nota 100");
+            case "B", "b"-> System.out.println("Equivale a nota 90");
+            case "C", "c"-> System.out.println("Equivale a nota 80");
+            case "D", "d"-> System.out.println("Equivale a nota 70");
+            case "E", "e"-> System.out.println("Equivale a nota 60");
 
         }
     }
