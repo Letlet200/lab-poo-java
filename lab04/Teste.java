@@ -6,13 +6,12 @@ public class Teste {
 
         System.out.println("Digite um número:");
         var numero = scanner.nextInt();
-        var contador = 1;
         
-        while (contador < 10){
-            System.out.println(numero + "x" + contador + "=" + numero * contador);
-            contador += 1;
-            
+        for ( int i = 0; i < 10; i++){
+            System.out.print(numero + "x" + i + "=");
+            System.out.println(i * numero);
+            }
         }
     }
-}
+
  
