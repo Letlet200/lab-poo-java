@@ -6,18 +6,27 @@ public class Jogo {
 
         System.out.println("Tente adivinhar o número:");
         
-        double aleatorio = Math.random();
+        int aleatorio = (int) (Math.random() * 100);
 
+        int tentativas = 0;
         do {
             System.out.println("Seu palpite:");
-            int num = scanner.nextInt();
+            double num = scanner.nextInt();
 
              if (num < aleatorio){
-                System.out.println("O número dado é menor que o valor gerado");
+                System.out.println("O número dado é menor que o valor gerado.");
+                tentativas++;
+
                 } 
                 else if (num == aleatorio) {
-                    System.out.println("Vôce acertou");
+                    System.out.println("Parabéns, você acertou!");
+                    System.out.println("Você fez " +tentativas+ " tentativas" );
                 }
+                else if (num > aleatorio){
+                    System.out.println("O número dado é maior que o valor gerado.");
+                    tentativas++;
+                }
+
                  
                 } while (true);
             }
